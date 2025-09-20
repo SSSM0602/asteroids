@@ -39,7 +39,7 @@ def main():
 
             for shot in shots:
                 if ast.collision(shot):
-                    ast.kill()
+                    ast.split()
                     shot.kill()
         for sprite in drawable:
             sprite.draw(screen)
