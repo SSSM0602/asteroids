@@ -5,7 +5,7 @@ The player controls a triangular ship, dodges incoming asteroids, and shoots the
 
 ---
 
-## 📋 Requirements
+## Requirements
 - **Python 3.9+**  
 - **Pygame** (`pip install pygame`)  
 - (Optional) [**uv**](https://github.com/astral-sh/uv) for fast virtual environment management  
@@ -87,5 +87,6 @@ python main.py
   - `asteroids` and `shots` for collision checks.  
 - `containers` tuples in each class automatically add new objects to the proper groups.  
 - Frame timing (`dt`) is managed with `Clock.tick()` for smooth movement.  
+
 
 
