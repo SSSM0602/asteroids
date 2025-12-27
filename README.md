@@ -12,7 +12,7 @@ The player controls a triangular ship, dodges incoming asteroids, and shoots the
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 ```
 .
 ├── main.py            # Entry point: game loop and event handling
@@ -26,7 +26,7 @@ The player controls a triangular ship, dodges incoming asteroids, and shoots the
 
 ---
 
-## ▶️ Running the Game
+## Running the Game
 
 ### **1. Using uv (Recommended)**
 [uv](https://github.com/astral-sh/uv) provides fast virtual environment creation and dependency installation.
@@ -61,7 +61,7 @@ python main.py
 
 ---
 
-## 🎮 Controls
+## Controls
 | Key      | Action              |
 |----------|-------------------|
 | **W**    | Thrust forward     |
@@ -73,18 +73,19 @@ python main.py
 
 ---
 
-## 🧩 Gameplay
+## Gameplay
 - Asteroids drift onto the screen from random positions.  
 - Hitting an asteroid with a shot causes it to **split** or be destroyed if already small.  
 - Colliding with an asteroid ends the game (**Game Over!**).  
 
 ---
 
-## 🛠 Development Notes
+## Development Notes
 - Uses **`pygame.sprite.Group`** for efficient update and draw calls:
   - `updatable` for all sprites with `update()`.
   - `drawable` for all sprites with `draw()`.
   - `asteroids` and `shots` for collision checks.  
 - `containers` tuples in each class automatically add new objects to the proper groups.  
 - Frame timing (`dt`) is managed with `Clock.tick()` for smooth movement.  
+
 
